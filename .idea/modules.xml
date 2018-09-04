@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sping-mvc.iml" filepath="$PROJECT_DIR$/sping-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-attack/spring-mvc-attack.iml" filepath="$PROJECT_DIR$/spring-mvc-attack/spring-mvc-attack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-basic/spring-mvc-basic.iml" filepath="$PROJECT_DIR$/spring-mvc-basic/spring-mvc-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-common-annotations/spring-mvc-common-annotations.iml" filepath="$PROJECT_DIR$/spring-mvc-common-annotations/spring-mvc-common-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-hibernate/spring-mvc-hibernate.iml" filepath="$PROJECT_DIR$/spring-mvc-hibernate/spring-mvc-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-jdbc/spring-mvc-jdbc.iml" filepath="$PROJECT_DIR$/spring-mvc-jdbc/spring-mvc-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-mybatis/spring-mvc-mybatis.iml" filepath="$PROJECT_DIR$/spring-mvc-mybatis/spring-mvc-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-principle/spring-mvc-principle.iml" filepath="$PROJECT_DIR$/spring-mvc-principle/spring-mvc-principle.iml" />
+    </modules>
+  </component>
+</project>
