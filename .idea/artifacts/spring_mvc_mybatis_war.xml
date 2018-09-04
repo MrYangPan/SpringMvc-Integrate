@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="spring-mvc-mybatis:war">
-    <output-path>$PROJECT_DIR$/spring-mvc-mybatis/target</output-path>
-    <root id="archive" name="sping-mvc.war">
-      <element id="artifact" artifact-name="spring-mvc-mybatis:war exploded" />
-    </root>
-  </artifact>
-</component>
