@@ -27,6 +27,7 @@ public class TestController {
     @RequestMapping("/action")
     public String action(Model model, int id, String name) {
         model.addAttribute("message", "name=" + name + ",id=" + id);
+        System.out.println("测试");
         return "action";
     }
 
