@@ -1,0 +1,162 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+
+    <display-name>Archetype Created Web Application</display-name>
+    <context-param>
+        <!-- 全局参数 -->
+        <param-name>url</param-name>
+        <param-value>jdbc:mysql:///test</param-value>
+    </context-param>
+    <context-param>
+        <!-- 全局参数 -->
+        <param-name>username</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <!-- 全局参数 -->
+        <param-name>password</param-name>
+        <param-value>123</param-value>
+    </context-param>
+
+    <!--<servlet>-->
+    <!--<servlet-name>servlet</servlet-name>-->
+    <!--<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+    <!--<init-param>-->
+    <!--<param-name>contextConfigLocation</param-name>-->
+    <!--<param-value>classpath:spring-servlet.xml</param-value>-->
+    <!--</init-param>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>servlet</servlet-name>-->
+    <!--<url-pattern>/</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ServletContextDemo1</servlet-name>
+        <servlet-class>com.spring.mvc.servlet.ServletContextDemo1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo1</servlet-name>
+        <url-pattern>/servlet/ServletContextDemo1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ServletContextDemo2</servlet-name>
+        <servlet-class>com.spring.mvc.servlet.ServletContextDemo2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo2</servlet-name>
+        <url-pattern>/servlet/ServletContextDemo2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ServletContextDemo3</servlet-name>
+        <servlet-class>com.spring.mvc.servlet.ServletContextDemo3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo3</servlet-name>
+        <url-pattern>/servlet/ServletContextDemo3</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>RequestDemo1</servlet-name>
+        <servlet-class>com.spring.mvc.request.RequestDemo1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestDemo1</servlet-name>
+        <url-pattern>/servlet/RequestDemo1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>RequestDemo2</servlet-name>
+        <servlet-class>com.spring.mvc.request.RequestDemo2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestDemo2</servlet-name>
+        <url-pattern>/servlet/RequestDemo2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>RequestDemo3</servlet-name>
+        <servlet-class>com.spring.mvc.request.RequestDemo3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestDemo3</servlet-name>
+        <url-pattern>/servlet/RequestDemo3</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>RequestDemo4</servlet-name>
+        <servlet-class>com.spring.mvc.request.RequestDemo4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestDemo4</servlet-name>
+        <url-pattern>/servlet/RequestDemo4</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ResponseDemo1</servlet-name>
+        <servlet-class>com.spring.mvc.response.ResponseDemo1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResponseDemo1</servlet-name>
+        <url-pattern>/servlet/ResponseDemo1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ResponseDemo2</servlet-name>
+        <servlet-class>com.spring.mvc.response.ResponseDemo2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResponseDemo2</servlet-name>
+        <url-pattern>/servlet/ResponseDemo2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ResponseDemo3</servlet-name>
+        <servlet-class>com.spring.mvc.response.ResponseDemo3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResponseDemo3</servlet-name>
+        <url-pattern>/servlet/ResponseDemo3</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>

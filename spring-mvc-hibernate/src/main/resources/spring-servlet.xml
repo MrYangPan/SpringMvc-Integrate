@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/cache
+    http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <!-- 注解扫描所有包 -->
+    <context:component-scan base-package="com.spring.hibernate.*"/>
+
+    <!-- 配置注解驱动 -->
+    <context:annotation-config/>
+
+    <tx:annotation-driven/>
+
+    <!--扫描缓存注解-->
+    <!--<cache:annotation-driven/>-->
+
+    <!-- DispatcherServlet不处理静态资源,交给服务器默认的servlet处理 -->
+    <!--<mvc:default-servlet-handler/>-->
+
+    <!-- /js/文件夹下的文件不需要拦截 -->
+    <!--<mvc:resources location="classpath:js" mapping="/js/**"/>-->
+
+    <!-- 视图解析器 -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+        <property name="order" value="1"/>
+    </bean>
+
+    <!--<bean id="htmlResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+    <!--<property name="prefix" value="/"></property>-->
+    <!--<property name="suffix" value=".html"></property>-->
+    <!--<property name="order" value="2"/>-->
+    <!--</bean>-->
+
+    <!-- 多段文件上传 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="1073741824"/>
+    </bean>
+</beans>
